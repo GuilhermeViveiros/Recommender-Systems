@@ -1,2 +1,2 @@
 # RecommenderSystems
-MachaaineLearning, Recommender Systems
+MachineLearning, Recommender Systems
