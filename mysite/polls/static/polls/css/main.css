@@ -1,0 +1,43 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700|Pacifico");
+
+html, body{
+	font-size: 100%;
+	font: inherit;
+}
+
+#backgroudImg{
+	display: table;
+	width: 100%;
+	padding: 0;
+	position: fixed;
+	background: url(../images/clouds.jpg);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	height: 100vh;
+	z-index: -1;
+}
+
+#Mytopbar{
+	background: #1c1c1c;
+	color: #d5d5d5;
+	height: 5em;
+	line-height: 5em;
+	position:fixed;
+	z-index: 1;
+}
+
+	#Mytopbar .logo {
+		font-family: 'Pacifico', cursive;
+		display: inline-block;
+
+		font-size: 1.75em;
+		text-transform: none;
+		font-weight: normal;
+		color: #e5474b;
+
+		height: inherit;
+		line-height: inherit;
+	}
