@@ -1,0 +1,18 @@
+{% extends "dappx/base.html" %}
+
+{% block body_block %}
+  <div class="container">
+    <div class="jumbotron">
+       {% if movies %}
+        <ul>
+          {% for m in movies %}
+            <li> {{ m }} </li>
+          {% endfor %}
+        
+        </ul>
+        {% else %}
+          <h3>You dont have any Movie</h3>
+        {% endif %}
+    </div>
+  </div>
+{% endblock %}
