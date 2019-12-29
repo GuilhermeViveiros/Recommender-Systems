@@ -25,7 +25,7 @@ SECRET_KEY = 'p==39axsh+s+0=9t@*4^t-as$o64@mzze&3+kj)5c+8n8q$z+!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
 ]
 
 MIDDLEWARE = [
@@ -67,6 +68,8 @@ TEMPLATES = [
         },
     },
 ]
+
+#AUTH_USER_MODEL = 'polls.Account'
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 

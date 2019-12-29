@@ -16,10 +16,20 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
+from .views import home
+from polls.views import login_view, register_view, logout_view, results, index
+
 appname = "powerchoice"
 
 urlpatterns = [
-    path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    path('', home), 
+    path('accounts/login/', login_view),
+    path('polls/', include('polls.urls')),
+    path('accounts/register/', register_view),
+    path('accounts/logout/', logout_view),
+    path('results/<str:movie>/', results),
+    path('results/', index )
 ]
+
 

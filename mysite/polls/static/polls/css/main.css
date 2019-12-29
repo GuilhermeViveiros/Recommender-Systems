@@ -11,7 +11,7 @@ html, body{
 	width: 100%;
 	padding: 0;
 	position: fixed;
-	background: url(../images/clouds.jpg);
+	background: url(polls/images/clouds.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;

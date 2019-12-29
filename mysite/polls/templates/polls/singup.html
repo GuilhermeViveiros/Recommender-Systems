@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recommender System</title>
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% load static %}
+		<link rel="stylesheet" href=" {%static  "polls/main.css" %} "/>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	</head>
+	<body>
+        <div class="container-fluid" style="margin-top: 2em;">
+            <div class="row" style="text-align: center;">
+                <div class="col logo2">
+                    PowerChoice
+                </div>
+            </div>
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

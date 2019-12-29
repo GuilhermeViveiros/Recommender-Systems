@@ -5,9 +5,7 @@ from . import views
 app_name = 'polls'
 
 urlpatterns = [
-    # ex: /polls/
-    path('', views.index, name='index'),
-    # ex: /polls/5/
+    
     #path('<str:movie_name>/', views.search, name='search'),
     path('search/', views.search, name='search'),
     # ex: /polls/5/results/
